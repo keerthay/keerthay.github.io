@@ -1,26 +1,23 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #61387b;
-  color: rgb(220 53 109 / 25%);
+  background-color: #f6f6f6;
+  color: #333;
 }
 
 .container {
   -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
 }
 
 /* Header Styles */
 header {
   background-color: #61387b;
-  color: rgb(220 53 109 / 25%);
+  color: #fff;
   padding: 20px;
 }
 
@@ -35,9 +32,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(220 53 109 / 25%);
+  color: #fff;
   text-decoration: none;
   padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f0f0f0;
 }
 
 /* Hero Section Styles */
@@ -45,13 +47,14 @@ nav ul li a {
   background-image: url('hero-image.jpg');
   background-size: cover;
   background-position: center;
-  color: rgb(220 53 109 / 25%);
+  color: #fff;
   text-align: center;
   padding: 200px 0;
 }
 
 #hero h1 {
   font-size: 48px;
+  margin-bottom: 20px;
 }
 
 #hero p {
@@ -62,12 +65,46 @@ nav ul li a {
 .btn {
   display: inline-block;
   background-color: #61387b;
-  color: rgb(220 53 109 / 25%);
-  padding: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #543b6c;
 }
 
 .one-third {
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background: no-repeat;
+  height: 400px;
 }
+
+/* Footer Styles */
+footer {
+  background-color: #61387b;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f0f0f0;
+}
+
+/* Other Section Styles (Add more styles for other sections as needed) */
+
+/* Responsive Styles (Add media queries for responsiveness) */
