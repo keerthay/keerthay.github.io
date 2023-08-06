@@ -8,10 +8,13 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 40px;
-  -webkit-background-size: contain;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 /* Header Styles */
