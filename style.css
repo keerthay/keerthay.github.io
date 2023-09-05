@@ -84,6 +84,18 @@ nav ul li a:hover {
   }
 }
 
+/* Adjust text color for better contrast in the hero section */
+#home-section .hero {
+  color: #fff; /* White text */
+}
+
+#home-section .hero h1,
+#home-section .hero h2,
+#home-section .hero p,
+#home-section .hero a {
+  color: #0e0c11; /* Dark gray text */
+}
+
 /* Footer Styles */
 footer {
   background-color: #a79c8e; /* Pastel brown */
