@@ -3,8 +3,8 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Light gray background */
-  color: #555; /* Dark gray text */
+  background-color: #c7bbe6; /* Light gray background */
+  color: #0e0c11; /* Dark gray text */
 }
 
 .container {
@@ -35,15 +35,12 @@ nav ul li a {
   padding: 10px;	
   transition: color 0.3s ease;	
 }
-
 nav ul li a:hover {	
   color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
-    &:hover {
-      color: #d4c9bb; /* Lighter pastel brown on hover */
-    }
-  }
+&:hover {
+  color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
 /* Hero Section Styles */
@@ -99,7 +96,7 @@ footer {
   }
 
   a {
-    color: #fff;
+    color: #0e0d0d;
     text-decoration: none;
     transition: color 0.3s ease;
 
