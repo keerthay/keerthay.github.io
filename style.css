@@ -77,9 +77,9 @@ nav ul li a:hover {
 }
 
 .one-third {
+  background: no-repeat;
   background-size: cover;
   background-position: center;
-  background: no-repeat;
   height: 400px;
 }
 
