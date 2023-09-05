@@ -3,8 +3,8 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
-  color: #333;
+  background-color: #f8f8f8; /* Light gray background */
+  color: #555; /* Dark gray text */
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #61387b;
+  background-color: #a79c8e; /* Pastel brown */
   color: #fff;
   padding: 20px;
 }
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f0f0f0;
+  color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
 /* Hero Section Styles */
@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #61387b;
+  background-color: #a79c8e; /* Pastel brown */
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #543b6c;
+  background-color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
 .one-third {
@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-  background-color: #61387b;
+  background-color: #a79c8e; /* Pastel brown */
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -102,15 +102,16 @@ footer a {
 }
 
 footer a:hover {
-  color: #f0f0f0;
+  color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
-/* Add this CSS to your stylesheet */
+/* Project Card Styles */
 .project-card {
   border: 1px solid #e0e0e0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   transition: transform 0.2s ease-in-out;
+  background-color: #f8f8f8; /* Light gray background */
 }
 
 .project-card:hover {
@@ -129,22 +130,63 @@ footer a:hover {
 .project-info h3 {
   font-size: 24px;
   margin-top: 0;
+  color: #333; /* Dark text */
 }
 
 .project-info p {
   font-size: 16px;
-  color: #555;
+  color: #777; /* Slightly darker gray text */
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #a79c8e; /* Pastel brown */
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #d4c9bb; /* Lighter pastel brown on hover */
 }
 
-/* Other Section Styles (Add more styles for other sections as needed) */
+/* Section Styles (Add more styles for other sections as needed) */
 
-/* Responsive Styles (Add media queries for responsiveness) */
+/* About Section Styles */
+#about-section {
+  background-color: #e1e8f0; /* Pastel blue-gray */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Resume Section Styles */
+#resume-section {
+  background-color: #ffe4c4; /* Pastel peach */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Skills Section Styles */
+#skills-section {
+  background-color: #b0e0e6; /* Pastel powder blue */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Projects Section Styles */
+#projects-section {
+  background-color: #e0eee0; /* Pastel honeydew */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Blog Section Styles */
+#blog-section {
+  background-color: #ffc0cb; /* Pastel pink */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Contact Section Styles */
+#contact-section {
+  background-color: #c3b091; /* Pastel tan */
+  color: #333;
+  padding: 80px 0;
+}
