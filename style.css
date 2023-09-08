@@ -187,18 +187,18 @@ footer {
   padding: 80px 0;
 }
 
-#interests-section {
+#outside-section {
   background-color: #eef0b6; /* Pastel honeydew */
   color: #333;
   padding: 80px 0;
 }
 
 /* Projects Section Styles */
-#projects-section {
-  background-color: #e0eee0; /* Pastel honeydew */
+/* #projects-section {
+  background-color: #e0eee0; /* Pastel honeydew 
   color: #333;
   padding: 80px 0;
-}
+} */
 
 /* Blog Section Styles */
 #blog-section {
