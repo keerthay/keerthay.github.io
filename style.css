@@ -269,6 +269,27 @@ footer {
   padding: 80px 0;
 }
 
+/* Leadership & Organizations Section Styling */
+#leadership-section {
+  background-color: #ffc0cb;  /* pastel pink */
+  padding: 40px 0;
+}
+
+#leadership-section h3 {
+  color: #d02090;  /* darker pink */
+  margin-bottom: 20px;
+}
+
+#leadership-section .role-title {
+  color: #ff69b4;  /* bright pink */
+  margin-bottom: 10px;
+}
+
+.leadership-card {
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adding a light shadow to each card for depth */
+}
+
 /* Leadership & Organizations Section */
 /* Leadership Card Styling */
 .leadership-card {
@@ -304,3 +325,24 @@ footer {
   color: #666;
   line-height: 1.6;
 }
+
+/* Work Experience Section Styling */
+.work-experience-section {
+  background-color: #b2d8b2;  /* pastel green */
+  padding: 40px 0;
+}
+
+.work-experience-section h3 {
+  color: #006400;  /* dark green */
+  margin-bottom: 20px;
+}
+
+.work-experience-section .role-title {
+  color: #228B22;  /* forest green */
+  margin-bottom: 10px;
+}
+
+.work-entry {
+  margin-bottom: 30px;
+}
+
