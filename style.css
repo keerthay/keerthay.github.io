@@ -63,6 +63,10 @@ nav ul li a:hover {
   }
 
   .btn {
+    margin-bottom: 40px; /* Adjust this value as per your design preference */
+  }
+
+  .btn {
     display: inline-block;
     background-color: #a79c8e; /* Pastel brown */
     color: #fff;
@@ -158,6 +162,37 @@ footer {
       }
     }
   }
+}
+
+/* Course Card Styles */
+.course-card {
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-info {
+  padding: 20px 0;
+}
+
+.course-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #053c64;
+}
+
+.course-info p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.4;
 }
 
 /* Section Styles (Add more styles for other sections as needed) */
