@@ -166,21 +166,32 @@ footer {
 
 /* Course Card Styles */
 .course-card {
-  border: 1px solid #e8e8e8;
-  padding: 20px;
-  margin-bottom: 30px;
-  transition: 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  padding: 15px; /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  background-color: #d8cfb0; /* muted light brownish shade */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  margin-bottom: 20px; /* Spacing between cards if they stack */
 }
+
+.course-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ensure badge container resizes correctly */
+[data-iframe-width] {
+  width: 100%; /* make it responsive */
+  height: auto;
+}
+
 
 .course-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-.course-info {
-  padding: 20px 0;
 }
 
 .course-info h3 {
@@ -228,6 +239,15 @@ footer {
   padding: 80px 0;
 }
 
+#outside-section h3 {
+  color: #5a6832; /* A darker green for contrast against the light yellowish-green background */
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #5a6832; /* Adds a subtle underline for distinction */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
 /* Projects Section Styles */
 /* #projects-section {
   background-color: #e0eee0; /* Pastel honeydew 
@@ -252,34 +272,31 @@ footer {
 /* Leadership & Organizations Section */
 /* Leadership Card Styling */
 .leadership-card {
-  border: 1px solid #e8e8e8;
+  background-color: #e6f7ff; /* Light blue background */
+  border: 1px solid #b3e0ff; /* Light blue border */
   padding: 20px;
-  border-radius: 8px;
-  background-color: #fdfdfd;
-  margin-bottom: 30px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Soft rounded corners */
+}
+
+.leadership-card h3 {
+  color: #007bb5; /* Darker blue for contrast */
+  margin-bottom: 10px;
+}
+
+.leadership-card .location {
+  font-style: italic;
+  color: #0099cc; /* A different shade of blue for subtle contrast */
+}
+
+.leadership-card .role-title {
+  color: #0099cc; /* A different shade of blue for subtle contrast */
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .leadership-card:hover {
   transform: translateY(-5px);
-}
-
-.leadership-card h3 {
-  color: #886002;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-.location {
-  font-weight: 300;
-  color: #555;
-}
-
-.role-title {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
 }
 
 .leadership-card p {
