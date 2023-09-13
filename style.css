@@ -169,7 +169,7 @@ footer {
   padding: 15px; /* adjust as needed */
   display: flex;
   flex-direction: column;
-  background-color: #d8cfb0; /* muted light brownish shade */
+  background-color: #f4edd9; /* muted light brownish shade */
   border-radius: 10px; /* Rounded corners for the card */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
   margin-bottom: 20px; /* Spacing between cards if they stack */
@@ -316,7 +316,6 @@ footer {
 }
 
 /* Leadership & Organizations Section */
-/* Leadership Section Styling */
 #leadership-section {
   background-color: #FFD1DC; /* Pastel Pink Background */
   padding: 50px 0;
@@ -368,8 +367,6 @@ footer {
   margin-right: 15px;
   vertical-align: middle; /* Aligns image with the text */
 }
-
-
 
 /* Work Experiences Section Styling */
 .work-experience-section {
