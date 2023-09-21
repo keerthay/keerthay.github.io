@@ -1,10 +1,14 @@
 /* Global Styles */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #c7bbe6; /* Light gray background */
   color: #0e0c11; /* Dark gray text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* This sets the font weight to bold for all headings */
 }
 
 .container {
@@ -411,5 +415,18 @@ footer {
   background-blend-mode: overlay;
 }
 
+.code-theme {
+  font-family: 'Courier New', monospace; /* Give it a coding feel with a monospace font */
+  color: rgba(14, 12, 17, 0.5); /* This makes the color 50% transparent */
+  font-size: 90%; /* A bit smaller than the main title for emphasis */
+  margin-left: 10px; /* Space it a bit from the main title */
+}
 
-
+.background-title {
+  position: absolute;
+  font-size: 8rem;
+  z-index: -1;
+  opacity: 0.1;
+  transform: rotate(-15deg);
+  left: 10%;
+}
