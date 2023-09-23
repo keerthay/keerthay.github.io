@@ -188,7 +188,6 @@ footer {
   height: auto;
 }
 
-
 .course-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
@@ -212,6 +211,7 @@ footer {
   color: #333;
   padding: 80px 0;
 }
+
 /* About Section Styles */
 #about-section {
   background-color: #dec7f2; /* Pastel purple */
@@ -411,4 +411,27 @@ footer {
   background-blend-mode: overlay;
 }
 
+/* CSS for Section Background Colors */
+.pastel-purple-bg {
+  background-color: #dec7f2; /* Pastel purple */
+  color: #333;
+  padding: 80px 0;
+}
 
+.pastel-peach-bg {
+  background-color: #ffe4c4; /* Pastel peach */
+  color: #333;
+  padding: 80px 0;
+}
+
+.pastel-powder-blue-bg {
+  background-color: #b0e0e6; /* Pastel powder blue */
+  color: #333;
+  padding: 80px 0;
+}
+
+.pastel-tan-bg {
+  background-color: #ede2cf; /* Pastel tan */
+  color: #333;
+  padding: 80px 0;
+}
