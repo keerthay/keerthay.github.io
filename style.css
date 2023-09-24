@@ -303,7 +303,7 @@ footer {
 }
 
 .discover-btn {
-  background-color: #fcaded; /* Consistent pastel pink */
+  background-color: #f0bcd4; /* Consistent pastel pink */
   border-color: #e067c4;
   color: #fff;
   border-radius: 5px;
@@ -317,10 +317,11 @@ footer {
 
 /* CSS for Leadership Cards */
 .leadership-card {
-  background-color: #FFF5F8; /* Lighter Pastel Pink for Cards */
+  background-color: #f0c9d5; /* Lighter Pastel Pink for Cards */
   margin-bottom: 40px;
+  margin-right: 5px;
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Shadow for depth */
   transition: transform .2s; /* Animation for hover effect */
   display: flex;
@@ -331,7 +332,7 @@ footer {
 
 .big-image-container {
   width: 100%;
-  max-height: 250px; /* Adjust the height as needed */
+  max-height: 2300px; /* Adjust the height as needed */
   overflow: hidden;
   border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
@@ -369,27 +370,9 @@ footer {
   margin-bottom: 20px;
 }
 
-.big-image-container {
-  width: 100%;
-  max-height: 250px; /* Adjust the height as needed */
-  overflow: hidden;
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
-}
-
-.big-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-  width: 100%;
-}
-
 /* Work Experiences Section Styling */
 .work-experience-section {
-  background-color: #b2d8b2; /* Pastel Green Background */
+  background-color: #ceefce; /* Pastel Green Background */
   padding: 50px 0;
 }
 
@@ -397,17 +380,17 @@ footer {
   font-size: 1.5em;
   margin-bottom: 15px;
   font-weight: 600;
-  color: #006400;  /* Dark Green Color for Headings */
+  color: #044204;  /* Dark Green Color for Headings */
 }
 
 .role-title {
-  color: #228B22;  /* Forest Green Color for Role Titles */
+  color: #045104;  /* Forest Green Color for Role Titles */
   font-weight: 500;
   margin-bottom: 15px;
 }
 
 .work-entry p {
-  color: #4B8B3B;  /* Adjusted Green Color for Texts */
+  color: #327521;  /* Adjusted Green Color for Texts */
   font-size: 1.1em; 
   line-height: 1.6;
   margin-bottom: 30px; 
