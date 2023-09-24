@@ -8,6 +8,8 @@ body {
 }
 
 .container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
 }
@@ -48,41 +50,53 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   padding: 200px 0;
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    margin-bottom: 40px; /* Adjust this value as per your design preference */
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #a79c8e; /* Pastel brown */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d4c9bb; /* Lighter pastel brown on hover */
+    }
+  }
+
+  .one-third {
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
 }
 
-#hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+/* Adjust text color for better contrast in the hero section */
+#home-section .hero {
+  color: #fff; /* White text */
 }
 
-#hero p {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-#hero .btn {
-  margin-bottom: 40px; /* Adjust this value as per your design preference */
-}
-
-#hero .btn {
-  display: inline-block;
-  background-color: #a79c8e; /* Pastel brown */
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-#hero .btn:hover {
-  background-color: #d4c9bb; /* Lighter pastel brown on hover */
-}
-
-#hero .one-third {
-  background: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
+#home-section .hero h1,
+#home-section .hero h2,
+#home-section .hero p,
+#home-section .hero a {
+  color: #0e0c11; /* Dark gray text */
 }
 
 /* Footer Styles */
@@ -91,41 +105,103 @@ footer {
   color: #fff;
   padding: 40px 0;
   text-align: center;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: #0e0d0d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #d4c9bb; /* Lighter pastel brown on hover */
+    }
+  }
 }
 
-footer p {
-  margin: 0;
-}
-
-footer a {
-  color: #0e0d0d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #d4c9bb; /* Lighter pastel brown on hover */
-}
-
-/* Card Styles */
-.project-card, .course-card, .leadership-card, .work-entry {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Project Card Styles */
+.project-card {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
   transition: transform 0.2s ease-in-out;
+  background-color: #b6e9f1; /* Light blue background */
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    padding: 20px;
+
+    h3 {
+      font-size: 24px;
+      margin-top: 0;
+      color: #333; /* Dark text */
+    }
+
+    p {
+      font-size: 16px;
+      color: #777; /* Slightly darker gray text */
+    }
+
+    .btn-primary {
+      background-color: #a79c8e; /* Pastel brown */
+      color: #fff;
+
+      &:hover {
+        background-color: #d4c9bb; /* Lighter pastel brown on hover */
+      }
+    }
+  }
 }
 
-.project-card:hover, .course-card:hover, .leadership-card:hover, .work-entry:hover {
-  transform: translateY(-5px);
+/* Course Card Styles */
+.course-card {
+  padding: 15px; /* adjust as needed */
+  display: flex;
+  flex-direction: column;
+  background-color: #f4edd9; /* muted light brownish shade */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  margin-bottom: 20px; /* Spacing between cards if they stack */
 }
 
-.card-content {
-  padding: 20px;
+.course-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Section Styles (Add more styles for other sections as needed) */
-.pastel-bg {
-  color: #333;
-  padding: 80px 0;
+/* Ensure badge container resizes correctly */
+[data-iframe-width] {
+  width: 100%; /* make it responsive */
+  height: auto;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #053c64;
+}
+
+.course-info p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.4;
 }
 
 /* Leadership & Organizations Section Styling */
@@ -134,25 +210,27 @@ footer a:hover {
   padding: 50px 0;
 }
 
-#leadership-section .heading-section h1,
-#leadership-section .heading-section h2 {
+#leadership-section .section-title {
   color: #b42a54; /* Darker Pink Shade for Titles */
 }
 
-#leadership-section .heading-section p {
-  color: #A32B56; /* Even Darker Pink Shade for Subtext */
-}
-
-/* Leadership Card Styles */
+/* CSS for Leadership Cards */
 .leadership-card {
   background-color: #FFF5F8; /* Lighter Pastel Pink for Cards */
   margin-bottom: 40px;
   padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Shadow for depth */
+  transition: transform .2s; /* Animation for hover effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .big-image-container {
   width: 100%;
-  max-height: 400px; /* Adjust the height as needed */
+  max-height: 250px; /* Adjust the height as needed */
   overflow: hidden;
   border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
@@ -161,6 +239,11 @@ footer a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  width: 100%;
 }
 
 .leadership-card:hover {
@@ -180,7 +263,50 @@ footer a:hover {
 }
 
 .leadership-card p {
-  color: #6B4D63; /* Adjusted Pink Shade for Card Text */
+  color: #6B4D63;  /* Adjusted Pink Shade for Card Text */
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+/* Work Experiences Section Styling */
+.work-experience-section {
+  background-color: #b2d8b2; /* Pastel Green Background */
+  padding: 50px 0;
+}
+
+.work-experience-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #006400;  /* Dark Green Color for Headings */
+}
+
+.role-title {
+  color: #228B22;  /* Forest Green Color for Role Titles */
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.work-entry p {
+  color: #4B8B3B;  /* Adjusted Green Color for Texts */
+  font-size: 1.1em; 
+  line-height: 1.6;
+  margin-bottom: 30px; 
+}
+
+.work-entry {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Shadow to give depth */
+  transition: transform .2s; /* Animation for hover effect */
+}
+
+.work-entry:hover {
+  transform: scale(1.05); /* Hover effect to slightly enlarge on hover */
+}
+
+.semi-transparent-bg {
+  background-color: rgba(255, 255, 255, 0.7); /* white with 70% opacity */
+  background-blend-mode: overlay;
 }
