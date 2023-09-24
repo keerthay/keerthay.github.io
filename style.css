@@ -315,23 +315,31 @@ footer {
   color: #fff;
 }
 
-/* CSS for Leadership Cards */
+/* Leadership & Organizations Section Styling */
+#leadership-section {
+  background-color: #FFD1DC; /* Pastel Pink Background */
+  padding: 50px 0;
+}
+
+#leadership-section .heading-section h1,
+#leadership-section .heading-section h2 {
+  color: #b42a54; /* Darker Pink Shade for Titles */
+}
+
+#leadership-section .heading-section p {
+  color: #A32B56; /* Even Darker Pink Shade for Subtext */
+}
+
+/* Leadership Card Styles */
 .leadership-card {
   background-color: #FFF5F8; /* Lighter Pastel Pink for Cards */
   margin-bottom: 40px;
   padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Shadow for depth */
-  transition: transform .2s; /* Animation for hover effect */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .big-image-container {
   width: 100%;
-  max-height: 250px; /* Adjust the height as needed */
+  max-height: 400px; /* Adjust the height as needed */
   overflow: hidden;
   border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
@@ -340,11 +348,6 @@ footer {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-  width: 100%;
 }
 
 .leadership-card:hover {
@@ -364,27 +367,9 @@ footer {
 }
 
 .leadership-card p {
-  color: #6B4D63;  /* Adjusted Pink Shade for Card Text */
+  color: #6B4D63; /* Adjusted Pink Shade for Card Text */
   line-height: 1.6;
   margin-bottom: 20px;
-}
-
-.big-image-container {
-  width: 100%;
-  max-height: 250px; /* Adjust the height as needed */
-  overflow: hidden;
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
-}
-
-.big-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-  width: 100%;
 }
 
 /* Work Experiences Section Styling */
