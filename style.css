@@ -318,9 +318,9 @@ footer {
 /* CSS for Leadership Cards */
 .leadership-card {
   background-color: #f0c9d5; /* Lighter Pastel Pink for Cards */
-  margin-bottom: 40px;
-  margin-right: 5px;
-  padding: 20px 30px;
+  margin-bottom: 25px;
+  margin-right: 2px;
+  padding: 10px 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Shadow for depth */
   transition: transform .2s; /* Animation for hover effect */
@@ -436,4 +436,14 @@ footer {
   background-color: #ede2cf; /* Pastel tan */
   color: #333;
   padding: 80px 0;
+}
+
+/* Change the color of text in the .subheading span */
+.subheading {
+  color: #540404; /* Replace #FF0000 with your desired color code */
+}
+
+/* Change the color of text in the h1 span */
+h1 span {
+  color: #540404; /* Replace #00FF00 with your desired color code */
 }
