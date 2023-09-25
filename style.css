@@ -201,7 +201,7 @@ footer {
 
 .course-info p {
   font-size: 1em;
-  color: #666;
+  color: #332d2d;
   line-height: 1.4;
 }
 
@@ -256,7 +256,7 @@ footer {
 } */
 
 /* Blog Section Styles */
-#blog-section {
+#leadership-section {
   background-color: #f2e0e3; /* Pastel pink */
   color: #333;
   padding: 80px 0;
@@ -298,7 +298,7 @@ footer {
 }
 
 .project-info h3 {
-  font-weight: 600;
+  font-weight: 200;
   margin-bottom: 10px;
 }
 
@@ -332,7 +332,7 @@ footer {
 
 .big-image-container {
   width: 100%;
-  max-height: 2300px; /* Adjust the height as needed */
+  max-height: 230px; /* Adjust the height as needed */
   overflow: hidden;
   border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
