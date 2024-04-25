@@ -438,6 +438,21 @@ footer {
   padding: 80px 0;
 }
 
+.category-links a.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #540404; /* Dark red, adjust color as needed */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.category-links a.btn:hover {
+  background-color: #7d015c; /* Lighter shade for hover */
+}
+
+
 /* Change the color of text in the .subheading span */
 .subheading {
   color: #540404; /* Replace #FF0000 with your desired color code */
