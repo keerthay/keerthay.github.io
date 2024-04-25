@@ -452,6 +452,15 @@ footer {
   background-color: #7d015c; /* Lighter shade for hover */
 }
 
+.icon-link {
+  font-size: 1.5rem; /* Adjust the size of the icons */
+  color: #666; /* Initial color, can use theme's color palette */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon-link:hover {
+  color: #0d6efd; /* Color change on hover */
+}
 
 /* Change the color of text in the .subheading span */
 .subheading {
@@ -462,3 +471,73 @@ footer {
 h1 span {
   color: #540404; /* Replace #00FF00 with your desired color code */
 }
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  right: -16px;
+  z-index: 1;
+  border: 3px solid #043f15; /* Match the color scheme */
+  background-size: cover;
+}
+
+.timeline-content {
+  padding: 20px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 30px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: 30px;
+}
+
+.timeline-item:nth-child(odd) .timeline-icon {
+  left: -16px;
+}
+
+.role-title small {
+  font-size: 0.8em;
+  color: #666;
+}
+
