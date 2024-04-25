@@ -474,70 +474,86 @@ h1 span {
 
 .timeline {
   position: relative;
-  padding: 20px 0;
+  padding: 10px 0;  /* Reduced padding for compactness */
 }
 
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
-  background-color: #ddd;
+  width: 2px;  /* Thinner line for a more refined look */
+  background-color: #ccc;  /* Lighter color for the line */
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  margin-left: -1px;  /* Adjust to align with the new line width */
 }
 
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 20px 40px;
+  padding: 10px 30px;  /* Reduced padding for compactness */
   box-sizing: border-box;
+  clear: both;
 }
 
 .timeline-item:nth-child(odd) {
   left: 0;
+  text-align: right;  /* Align text for better readability */
 }
 
 .timeline-item:nth-child(even) {
   left: 50%;
+  text-align: left;
 }
 
 .timeline-icon {
   position: absolute;
-  top: 0;
-  width: 32px;
-  height: 32px;
+  top: 10px;  /* Adjust position to better align with content */
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #fff;
-  right: -16px;
+  background-size: contain;
+  border: 3px solid #043f15;
   z-index: 1;
-  border: 3px solid #043f15; /* Match the color scheme */
-  background-size: cover;
-}
-
-.timeline-content {
-  padding: 20px 30px;
-  background-color: #fff;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: 30px;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: 30px;
 }
 
 .timeline-item:nth-child(odd) .timeline-icon {
-  left: -16px;
+  left: auto;
+  right: -20px;  /* Adjust to better position the icon on the line */
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  left: -20px;
+  right: auto;
+}
+
+.timeline-content {
+  background-color: #f9f9f9;
+  padding: 10px 20px;  /* More compact padding */
+  border: 2px solid #043f15;  /* Add border for definition */
+  border-radius: 8px;  /* Rounded corners for aesthetics */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+  position: relative;  /* Ensure the content overlaps the line slightly */
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: 20px;
+}
+
+.timeline-content h3, .timeline-content p, .timeline-content .role-title {
+  margin: 5px 0;  /* Reduced margin for compactness */
+}
+
+.timeline-content p {
+  font-size: 0.9em;  /* Slightly smaller font for compactness */
 }
 
 .role-title small {
-  font-size: 0.8em;
-  color: #666;
+  display: block;  /* Ensure proper line breaking */
+  font-size: 0.75em;  /* Smaller font size for metadata */
 }
-
