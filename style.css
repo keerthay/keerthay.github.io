@@ -474,31 +474,34 @@ h1 span {
 
 .timeline {
   position: relative;
-  padding: 10px 0;  /* Reduced padding for compactness */
+  padding: 10px 0;
 }
 
 .timeline::after {
   content: '';
   position: absolute;
-  width: 2px;  /* Thinner line for a more refined look */
-  background-color: #ccc;  /* Lighter color for the line */
+  width: 2px;
+  background-color: #ccc;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;  /* Adjust to align with the new line width */
+  margin-left: -1px;
 }
 
 .timeline-item {
   position: relative;
   width: 50%;
-  padding: 10px 30px;  /* Reduced padding for compactness */
+  padding: 10px 30px;
   box-sizing: border-box;
   clear: both;
+  display: flex;
+  align-items: center;
 }
 
 .timeline-item:nth-child(odd) {
   left: 0;
-  text-align: right;  /* Align text for better readability */
+  text-align: right;
+  flex-direction: row-reverse;
 }
 
 .timeline-item:nth-child(even) {
@@ -507,53 +510,32 @@ h1 span {
 }
 
 .timeline-icon {
-  position: absolute;
-  top: 10px;  /* Adjust position to better align with content */
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #fff;
+  width: 80px;
+  height: 80px;
   background-size: contain;
-  border: 3px solid #043f15;
-  z-index: 1;
-}
-
-.timeline-item:nth-child(odd) .timeline-icon {
-  left: auto;
-  right: -20px;  /* Adjust to better position the icon on the line */
-}
-
-.timeline-item:nth-child(even) .timeline-icon {
-  left: -20px;
-  right: auto;
+  background-repeat: no-repeat;
+  margin: 0 20px;
 }
 
 .timeline-content {
   background-color: #f9f9f9;
-  padding: 10px 20px;  /* More compact padding */
-  border: 2px solid #043f15;  /* Add border for definition */
-  border-radius: 8px;  /* Rounded corners for aesthetics */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
-  position: relative;  /* Ensure the content overlaps the line slightly */
+  padding: 10px 20px;
+  border: 2px solid #043f15;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: 20px;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: 20px;
-}
-
-.timeline-content h3, .timeline-content p, .timeline-content .role-title {
-  margin: 5px 0;  /* Reduced margin for compactness */
+.timeline-content h3,
+.timeline-content p,
+.timeline-content .role-title {
+  margin: 5px 0;
 }
 
 .timeline-content p {
-  font-size: 0.9em;  /* Slightly smaller font for compactness */
+  font-size: 0.9em;
 }
 
 .role-title small {
-  display: block;  /* Ensure proper line breaking */
-  font-size: 0.75em;  /* Smaller font size for metadata */
+  display: block;
+  font-size: 0.75em;
 }
