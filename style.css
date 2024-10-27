@@ -472,6 +472,12 @@ h1 span {
   color: #540404; /* Replace #00FF00 with your desired color code */
 }
 
+.rotating-tagline {
+  color: #540404; /* Adjust color as desired */
+  font-weight: bold; /* Makes the tagline stand out */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
 .timeline {
   position: relative;
   padding: 10px 0;

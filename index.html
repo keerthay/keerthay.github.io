@@ -61,7 +61,9 @@
 							<div class="text">
 								<span class="subheading" style="color: #540404;">Hello!</span>
 								<h1 class="mb-4 mt-3"><span style="color: #540404;">I'm Keerthi Jayaram</span></h1>
-								<h2 class="mb-4">Simply put, I adore coding, diving into data, and connecting with ease!</h2>
+								<h2 class="mb-4">
+									<span class="rotating-tagline">Simply put, I adore coding, diving into data, and connecting with ease!</span>
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -511,7 +513,7 @@
 		
 			<div class="row justify-content-center mt-5">
 				<div class="col-md-6 text-center ftco-animate">
-					<a href="/assets/Keerthi-Resume-March-2024" download class="btn btn-primary py-4 px-5" style="margin-top: -20px; margin-bottom: 20px;">Download Resume</a>
+					<a href="/assets/Keerthi-Data-Resume-Jun-2024.pdf" download class="btn btn-primary py-4 px-5" style="margin-top: -20px; margin-bottom: 20px;">Download Resume</a>
 				</div>
 			</div>
 		</div>		
@@ -657,6 +659,23 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  <script>
+    const taglines = [
+        "Simply put, I adore coding.",
+        "Diving deep into data.",
+        "Connecting with ease!",
+        "Turning ideas into reality."
+    ];
+    let currentTagline = 0;
+
+    function rotateTaglines() {
+        const taglineElement = document.querySelector(".rotating-tagline");
+        taglineElement.textContent = taglines[currentTagline];
+        currentTagline = (currentTagline + 1) % taglines.length;
+    }
+
+    setInterval(rotateTaglines, 3000); // Changes tagline every 3 seconds
+</script>
+
   </body>
 </html>
